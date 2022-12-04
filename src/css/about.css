@@ -1,0 +1,215 @@
+.home-about-section {
+    width: var(--min-width);
+    max-width: var(--max-width);
+    height: max-content;
+    background: var(--background-light-color);
+    box-shadow: 0px 36px 105px rgba(43, 56, 76, 0.1);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 3rem;
+}
+
+.about-section-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.about-left-image {
+    width: 400px;
+    height: max-content;
+    box-shadow: 0px 24px 116px rgba(43, 56, 76, 0.09);
+    border-radius: 10px;
+}
+
+.about-left-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-left-social {
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-light-color);
+    box-shadow: 0px 12px 64px rgba(28, 25, 25, 0.12);
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.about-left-social-item {
+    font-size: 28px;
+    padding: 12px;
+    margin: 0 .5rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+
+    opacity: 0;
+    /* transform: translateY(84px); */
+    animation: sliderY 1s cubic-bezier(0.15, 0, 0.333, 1) forwards;
+    animation-delay: .5s;
+}
+
+.about-left-social-item a {
+    text-decoration: none;
+    color: var(--primary-color) !important;
+
+}
+
+.about-social-item-active a {
+    text-decoration: none;
+    color: var(--text-light-color) !important;
+
+}
+
+.about-social-item-active {
+    background: var(--primary-color);
+    color: var(--text-light-color);
+}
+
+.about-section-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-right-title {
+    width: 80%;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 50px;
+    color: var(--text-dark-color);
+    margin-bottom: 2rem;
+    display: flex;
+
+}
+
+.about-right-desc {
+    width: 80%;
+    margin: .6rem 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--text-gray-color);
+    display: flex;
+    text-align: justify;
+}
+
+.about-right-desc:nth-child(2) {
+    animation-delay: .8s !important;
+}
+
+.about-right-buttons {
+    width: 80%;
+    display: flex;
+    width: 100%;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+.about-right-btn {
+    padding: 12px 24px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    color: var(--text-light-color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+
+
+.about-right-btn:nth-child(2) {
+    color: var(--primary-color);
+    background: var(--text-light-color);
+    border: 1px solid var(--primary-color);
+    margin-left: 1rem;
+
+}
+
+.about-right-btn:nth-child(2) {
+    color: var(--primary-color);
+    background: var(--text-light-color);
+    border: 1px solid var(--primary-color);
+    margin-left: 1rem;
+
+}
+
+/* Responsive */
+@media only screen and (max-width: 1050px) {
+
+    .home-about-section {
+        /* margin-top: 2rem; */
+
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
+    .about-section-left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about-section-right {
+        width: 100%;
+        margin-top: 5rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-right-title,
+    .about-right-desc,
+    .about-right-buttons {
+        width: 80%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .about-left-social {
+        padding: 10px;
+    }
+
+    .about-left-social-item {
+        padding: 0;
+    }
+
+    .about-right-title {
+        width: 90%;
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .about-right-desc {
+        width: 90%;
+        text-align: justify;
+    }
+
+    .about-right-buttons {
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .about-right-btn {
+        padding: 12px 18px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0;
+    }
+}
+
+/* End About Section */

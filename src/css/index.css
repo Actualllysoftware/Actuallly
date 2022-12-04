@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url(./header.css);
+@import url(./landing.css);
+@import url(./about.css);
+@import url(./worprocess.css);
+@import url(./projects.css);
+@import url(./devices.css);
+@import url(./ideashare.css);
+@import url(./services.css);
+@import url(./testimonial.css);
+@import url(./appUidesign.css);
+@import url(./footer.css);
+@import url(./carousel.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #E29B00;
+    --primary-light-color: rgba(226, 154, 0, 0.15);
+    --background-light-color: #fff;
+    --background-gray-color: #F0F1F3;
+    --background-dark-color: #132238;
+    --text-light-color: #FFFFFF;
+    --text-black-color: #333333;
+    --text-dark-color: #424E60;
+    --text-gray-color: #697484;
+    --light-default-shadow: 0px 12px 64px rgba(28, 25, 25, 0.12);
+    --min-width: 80%;
+    --max-width: 1800px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--dark-color);
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-main-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    cursor: default;
+
+
+}
+
+.project-home-main {
+    width: 100vw;
+    height: calc(100vh - 92px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+
+    scroll-behavior: smooth !important;
+}
+
+.project-home-item {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.animateX {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.animateXactive {
+    animation: sliderX 1s cubic-bezier(0.15, 0, 0.333, 1) forwards;
+    animation-delay: .6s;
+}
+
+.animateY {
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+.animateYactive {
+    animation: sliderY 1s cubic-bezier(0.15, 0, 0.333, 1) forwards;
+    animation-delay: .2s;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1250px) {
+    :root {
+        --min-width: 95%;
+    }
+}
+
+@media only screen and (max-width: 650px) {}
+
+
+/* Animation */
+@keyframes sliderX {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes sliderY {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}

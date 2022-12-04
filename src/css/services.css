@@ -1,0 +1,130 @@
+/* About Section */
+
+.services-section-main {
+    background: #F0F1F3;
+}
+
+.services-section-items {
+
+    width: var(--min-width);
+    max-width: var(--max-width);
+    height: 100%;
+    display: flex;
+    padding: 5rem 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-section-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.services-item-title {
+    justify-content: center;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 50px;
+    color: var(--text-black-color);
+    margin-bottom: 2rem;
+    display: flex;
+
+
+}
+
+.services-section-right {
+    margin-top: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services-right-item {
+    margin: .5rem;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--background-light-color);
+    border-radius: 12px;
+    padding: 28px;
+    cursor: pointer;
+    transition: all .3s;
+    box-shadow: 32px 32px 124px rgba(43, 56, 76, 0.1);
+
+}
+
+.services-right-item-icon {
+    padding: 15px;
+    color: var(--primary-color);
+    border-radius: 6px;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background: var(--primary-light-color); */
+}
+
+.services-right-item-title {
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-black-color);
+}
+
+.services-right-item-desc {
+    margin-top: .6rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-gray-color);
+}
+
+/* .services-right-item-active {
+    transform: translateY(-1.5rem) !important;
+    box-shadow: 32px 32px 124px rgba(43, 56, 76, 0.1);
+} */
+
+
+/* Responsive */
+@media only screen and (max-width: 1050px) {
+
+    .services-section-items {
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem 0;
+    }
+
+    .services-section-left,
+    .services-section-right {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+
+    .services-item-title,
+    .services-item-desc {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .services-section-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-right-item {
+        width: 80%;
+        align-items: center;
+    }
+
+}

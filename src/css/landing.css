@@ -1,0 +1,207 @@
+/* Landing Section */
+.home-gradient-item {
+    position: absolute;
+    z-index: -1;
+    width: 871.21px;
+    height: 871.21px;
+    filter: blur(300px);
+    transform: rotate(-130.44deg);
+}
+
+.home-gradient-item:nth-child(1) {
+    position: absolute;
+    top: -700px;
+    right: -700px;
+    background: rgba(218, 77, 241, 0.4);
+}
+
+.home-gradient-item:nth-child(2) {
+    bottom: -700px;
+    right: -500px;
+    background: rgba(196, 245, 233, 0.7);
+}
+
+
+.home-content-items {
+    width: var(--min-width);
+    max-width: var(--max-width);
+    height: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-item-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.home-item-left-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    color: var(--text-strong-color);
+    margin: 2rem 0;
+    text-align: left;
+    transform: translateY(100%);
+    opacity: 0;
+    animation: sliderY 1s cubic-bezier(0.15, 0, 0.333, 1) forwards;
+}
+
+.home-item-left-desc {
+    margin: 2rem 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--text-gray-color);
+
+    transform: translateY(100%);
+    opacity: 0;
+    animation: sliderY 1s cubic-bezier(0.15, 0, 0.333, 1) forwards;
+
+}
+
+.home-item-left-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    transform: translateY(100%);
+    opacity: 0;
+    animation: sliderY 1s cubic-bezier(0.15, 0, 0.333, 1) forwards;
+}
+
+.home-item-left-button span {
+    padding: 16px 40px;
+    background: var(--primary-color);
+    color: var(--text-light-color);
+    border-radius: 4px;
+    margin: 1rem 0;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.home-item-left-button span:hover {
+    opacity: .9;
+}
+
+.home-item-left-overview {
+    margin-top: 5rem;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-overview-item {
+    width: calc(100% / 3.1);
+    height: 6rem;
+    background: var(--primary-light-color);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: default;
+
+}
+
+.home-overview-item-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    /* line-height: 40px; */
+}
+
+.home-overview-item-desc {
+    margin-top: .5rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 24px; */
+}
+
+.home-item-right {
+    width: 50%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translateX(100%);
+    opacity: 0;
+    animation: sliderX 1s cubic-bezier(0.15, 0, 0.333, 1) forwards;
+}
+
+.home-item-right-image {
+    width: 500px;
+    height: max-content;
+    border-radius: 25px;
+}
+
+.home-item-right-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1050px) {
+
+    .landing-section-main {
+        height: max-content !important;
+    }
+
+    .home-content-items {
+        flex-direction: column-reverse;
+    }
+
+    .home-item-left-button {
+        justify-content: center;
+    }
+
+
+    .home-item-left,
+    .home-item-right {
+        width: var(--min-width);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-item-left-details {
+        align-items: center;
+    }
+
+    .home-item-right {
+        margin-top: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+
+    .home-item-left-title {
+        font-size: 42px;
+    }
+
+    .home-overview-item-title {
+        font-size: 18px;
+    }
+
+    .home-overview-item-desc {
+        font-size: 14px;
+    }
+}
+
+/* animation: carsblinkleft .2s cubic-bezier(0.15, 0, 0.333, 1) forwards; */
+
+/* End Landing Section */

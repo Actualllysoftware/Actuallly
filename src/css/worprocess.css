@@ -1,0 +1,140 @@
+/* About Section */
+
+.worprocess-section-main {
+    background: #F0F1F3;
+}
+
+.worprocess-section-items {
+
+    width: var(--min-width);
+    max-width: var(--max-width);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+.worprocess-section-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.worprocess-item-title {
+    width: 80%;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 50px;
+    color: var(--text-black-color);
+    margin-bottom: 2rem;
+    display: flex;
+
+
+}
+
+.worprocess-item-desc {
+    width: 80%;
+    margin: 0.6rem 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--text-gray-color);
+    display: flex;
+
+}
+
+.worprocess-section-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.worprocess-right-item {
+    margin: .5rem;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--background-light-color);
+    border-radius: 12px;
+    padding: 28px;
+    cursor: pointer;
+    transition: all .3s;
+
+
+}
+
+.worprocess-right-item-icon {
+    padding: 15px;
+    color: var(--primary-color);
+    border-radius: 6px;
+    font-size: 24px;
+    background: var(--primary-light-color);
+}
+
+.worprocess-right-item-title {
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-black-color);
+}
+
+.worprocess-right-item-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-gray-color);
+}
+
+.worprocess-right-item-active {
+    transform: translateY(-1.5rem) !important;
+    box-shadow: 32px 32px 124px rgba(43, 56, 76, 0.1);
+}
+
+.worprocess-right-item-active .worprocess-right-item-icon {
+    background: var(--primary-color);
+    color: var(--text-light-color);
+}
+
+/* Responsive */
+@media only screen and (max-width: 1050px) {
+
+    .worprocess-section-items {
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem 0;
+    }
+
+    .worprocess-section-left,
+    .worprocess-section-right {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+
+    .worprocess-item-title,
+    .worprocess-item-desc {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .worprocess-section-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .worprocess-right-item {
+        width: 80%;
+        align-items: center;
+    }
+
+}
